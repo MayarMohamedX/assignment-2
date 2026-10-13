@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Studio Project</title>
+    <link rel="stylesheet" href="css/styleSheet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Studio</a>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="component.html">Component</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1>Welcome to My Project</h1>
+        <p>
+          This project demonstrates responsive layouts, modern CSS variables,
+          forms, and accessibility standards.
+        </p>
+        <div class="actions">
+          <a href="component.html" class="btn">View Components</a>
+          <a href="#open-modal" class="btn btn-outline">Open Modal (CSS)</a>
+        </div>
+      </section>
+
+      <!-- Grid layout with 3 columns on desktop, 2 on tablet, 1 on mobile -->
+      <section class="grid">
+        <article class="card">
+          <h3>Responsive Layout</h3>
+          <p>
+            Configured to display 2 columns on tablet screens and 3 columns on
+            desktop screens using CSS Grid.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Dark Mode Support</h3>
+          <p>
+            Automatically adapts text and background colors based on your system
+            preferences using color-scheme.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Pure CSS Modal</h3>
+          <p>
+            A fully functional modal window built using CSS only without relying
+            on any JavaScript.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- CSS-Only Modal Structure -->
+    <div id="open-modal" class="modal-overlay">
+      <div class="modal-content">
+        <h3>CSS Modal Window</h3>
+        <p>
+          This modal is triggered and closed entirely using pure CSS target
+          states!
+        </p>
+        <a href="#" class="btn">Confirm</a>
+        <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">&copy; 2026 Studio Project</div>
+    </footer>
+  </body>
+</html>

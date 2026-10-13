@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact | My Project</title>
+    <link rel="stylesheet" href="css/styleSheet.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="component.html">Component</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contact Me</h2>
+        <p>Fill out the form below to get in touch:</p>
+
+        <form action="#" method="POST">
+          <!-- Text input -->
+          <div class="box">
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" name="User-name" required />
+          </div>
+          <br />
+
+          <!-- Email input -->
+          <div class="box">
+            <label for="email">Email Address:</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+          <br />
+
+          <!-- Number input -->
+          <div class="box">
+            <label for="age">Age:</label><br />
+            <input type="number" id="age" name="age" min="1" max="120" />
+          </div>
+          <br />
+
+          <!-- Date input -->
+          <div class="box">
+            <label for="dob">Date of Birth:</label><br />
+            <input type="date" id="dod" name="birth_date" />
+          </div>
+          <br />
+
+          <!-- Radio buttons -->
+          <div class="radio">
+            <label>Gender:</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <br />
+
+          <!-- Checkboxes -->
+          <div class="checkbox">
+            <label>Interests:</label><br />
+            <input
+              type="checkbox"
+              id="interest_html"
+              name="interests"
+              value="html"
+            />
+            <label for="interest_html">HTML</label><br />
+            <input
+              type="checkbox"
+              id="interest_css"
+              name="interests"
+              value="css"
+            />
+            <label for="interest_css">CSS</label>
+          </div>
+          <br />
+
+          <!-- Dropdown menu (Select) -->
+          <div class="menu">
+            <label for="subject">Subject:</label><br />
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+          <br />
+
+          <!-- Large text box (Textarea) -> better than input for large message-->
+          <div class="message">
+            <label for="message">Your Message:</label><br />
+            <textarea id="message" name="message" rows="5" cols="50"></textarea>
+          </div>
+          <br />
+
+          <!-- Submit Button -->
+          <div class="button">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!--Copyrights-->
+      <p>&copy; 2026 My Blog</p>
+    </footer>
+  </body>
+</html>
